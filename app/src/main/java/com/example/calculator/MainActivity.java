@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     EditText inputID_1,inputID_2;
     TextView resultViewID;
     Button sumID, subID, mulID,divID;
+    int num1, num2, result;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +30,9 @@ public class MainActivity extends AppCompatActivity {
         sumID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int num1 = Integer.parseInt(inputID_1.getText().toString());
-                int num2 = Integer.parseInt(inputID_2.getText().toString());
-                int result = num1+num2;
+                num1 = Integer.parseInt(inputID_1.getText().toString());
+                num2 = Integer.parseInt(inputID_2.getText().toString());
+                result = num1+num2;
                 resultViewID.setText(Integer.toString(result));
 
             }
@@ -41,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
         subID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int num1 = Integer.parseInt(inputID_1.getText().toString());
-                int num2 = Integer.parseInt(inputID_2.getText().toString());
-                int result = num1-num2;
+                num1 = Integer.parseInt(inputID_1.getText().toString());
+                num2 = Integer.parseInt(inputID_2.getText().toString());
+                result = num1-num2;
                 resultViewID.setText(Integer.toString(result));
             }
         });
@@ -52,9 +53,9 @@ public class MainActivity extends AppCompatActivity {
         mulID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int num1 = Integer.parseInt(inputID_1.getText().toString());
-                int num2 = Integer.parseInt(inputID_2.getText().toString());
-                int result = num1*num2;
+                num1 = Integer.parseInt(inputID_1.getText().toString());
+                num2 = Integer.parseInt(inputID_2.getText().toString());
+                result = num1*num2;
                 resultViewID.setText(Integer.toString(result));
             }
         });
